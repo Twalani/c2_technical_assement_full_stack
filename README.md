@@ -46,6 +46,7 @@ This assessment requires you to build a simple **To-Do application** using **Rea
 
 ## Evaluation Criteria
 
+🔹 **Application must run.** → Please provide instructions on how to run the app in the Readme.md file.
 🔹 **Code Quality** → Clean, modular, decoupled, readable, and well-structured code.  
 🔹 **Functionality** → Meets all core feature requirements.  
 🔹 **Performance** → API is efficient and UI interactions are smooth.  
@@ -65,4 +66,4 @@ This assessment requires you to build a simple **To-Do application** using **Rea
 
 ## Contact
 
-For any questions, reach out to **thulaganyo@lortechnologies.com or craig@lortechnologies.com**.
+For any questions, reach out to **thulaganyo.mooki@c2grouptech.co.za or craig.barsdorff@c2grouptech.co.za.
