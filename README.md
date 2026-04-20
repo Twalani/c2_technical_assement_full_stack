@@ -39,7 +39,7 @@ Follow the steps below to run the application locally.
 
 ```bash
 git clone <repo-url>
-cd <c2_intern_assement>
+cd <c2_technical_assement_full_stack>
 ```
 
 ---
