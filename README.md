@@ -1,69 +1,136 @@
-# To-Do App Assessment
+# 📝 Todo App (Full Stack)
 
-## Overview
-
-This assessment requires you to build a simple **To-Do application** using **React, Python FastAPI/Django, and CSS**. The backend will store tasks in a **PostgreSQL database**.
-
-## Requirements
-
-### Features
-
-- ✅ **Task Management**
-  - Users can **create** a task with a **title** and **description**.
-  - Users can **edit** a task’s title and description.
-  - Users can **delete** tasks.
-  - Users can **mark a task as completed/incomplete**.
-- ✅ **Filtering & Sorting**
-  - Users can **filter tasks** by **completed** and **pending**.
-  - Tasks should be **sorted** by **creation date**.
-- ✅ **Basic UI & Responsiveness**
-  - The **UI must be clean and responsive**.
-  - Users should be able to interact smoothly with tasks.
-
----
-
-## Technical Requirements
+## 🛠 Tech Stack & Versions
 
 ### Backend
 
-- A **REST API** with the following endpoints:
-  - `POST /tasks` → Create a new task.
-  - `GET /tasks` → Retrieve all tasks.
-  - `GET /tasks/{task_id}` → Retrieve a single task.
-  - `PUT /tasks/{task_id}` → Update a task (title, description, completed status).
-  - `DELETE /tasks/{task_id}` → Delete a task.
-- Use **PostgreSQL** as the database.
-- Store each task with an **auto-incrementing ID**.
+* Python: 3.11
+* FastAPI: 0.110.0
 
-### Frontend (React + CSS)
+### Frontend
 
-- **State management**: Use `useState`.
-- **API Calls**: Use `fetch` or `axios` to communicate with the FastAPI server.
-- **Task List UI**: Display tasks with options to **edit**, **delete**, and **mark complete**.
-- **Filters**: Buttons to show **All, Completed, and Pending** tasks.
+* React: 19.2.5
+* React DOM: 19.2.5
+* React Scripts: 5.0.1
+* Node.js: v22.12.0
 
----
+This project is a full-stack Todo application built with:
 
-## Evaluation Criteria
+* **Frontend:** React
+* **Backend:** FastAPI (Python)
+* **Database:** PostgreSQL
 
-🔹 **Application must run.** → Please provide instructions on how to run the app in the Readme.md file.
-🔹 **Code Quality** → Clean, modular, decoupled, readable, and well-structured code.  
-🔹 **Functionality** → Meets all core feature requirements.  
-🔹 **Performance** → API is efficient and UI interactions are smooth.  
-🔹 **Creativity** → Bonus features or design improvements.
+The project is structured into two folders:
+
+```
+/backend
+/frontend
+```
 
 ---
 
-## Submission Guidelines
+## 🚀 Quick Start Guide
 
-1. To start clone this project onto your laptop.
-2. Branch off of master branch creating your own feature branch, with naming convention: todo-app-yourName-yourSurname.
-3. When you're done with building and testing your app, **Push the code** to **GitHub on your profile* - be sure not to push it into the master branch.
-5. Include a **README.md** explaining how to run the project and any special notes you want to make us aware of.
-6. **If the project cannot run on our side, unfortunately then we will not be able to evaluate it properly - so it is improtant that your app works.**
+Follow the steps below to run the application locally.
 
 ---
 
-## Contact
+## 1️⃣ Clone the Repository
 
-For any questions, reach out to **thulaganyo.mooki@c2grouptech.co.za or craig.barsdorff@c2grouptech.co.za.
+```bash
+git clone <repo-url>
+cd <c2_intern_assement>
+```
+
+---
+
+## 2️⃣ Setup Python Virtual Environment
+
+Make sure you have **Python 3.11** installed.
+
+```bash
+py -3.11 -m venv todo
+```
+
+Activate the environment:
+
+**Windows:**
+
+```bash
+todo\Scripts\activate
+```
+
+---
+
+## 3️⃣ Setup Backend
+
+Navigate to the backend folder:
+
+```bash
+cd backend
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4️⃣ Configure Environment Variables
+
+Inside the `backend` folder, locate the `.env` file.
+
+Update the following:
+
+```env
+DATABASE_URL=postgresql://postgres:<your-password>@localhost:5432/todo_db
+API_KEY=supersecret123
+```
+
+Replace `<your-password>` with your PostgreSQL password.
+
+---
+
+## 5️⃣ Setup PostgreSQL Database
+
+Make sure PostgreSQL is installed and running.
+
+Run:
+
+```sql
+CREATE DATABASE todo_db;
+```
+
+---
+
+## 6️⃣ Run the Backend Server
+
+```bash
+uvicorn main:app --reload
+```
+
+Open:
+
+```
+http://localhost:8000
+```
+
+---
+
+## 🧩 Frontend
+
+The frontend is included for code evaluation.
+The app is structured so the backend serves everything for easier testing.
+
+---
+
+## ⚠️ Notes
+
+* Ensure PostgreSQL is running
+* Default port is **5432**
+* API key: `supersecret123`
+* If you experience any issues, please reach out
+
+---
